@@ -1,12 +1,24 @@
 $('#button1').on('click', function() {
-  ga('send', 'event', 'Button1', 'Действия', 'Иллюстрация', 'Ценность1');
+	console.log('2 обработчик события click');
+	ga('send', {
+  hitType: 'event',
+  eventCategory: 'Button1',
+  eventAction: 'Нажатие',
+  eventLabel: 'Ценность1'
 });
 
 $('#button2').on('click', function() {
-  ga('send', 'event', 'Button2', 'Действия', 'Иллюстрация', 'Ценность2');
+  ga('send', {
+  hitType: 'event',
+  eventCategory: 'Button2',
+  eventAction: 'Нажатие',
+  eventLabel: 'Ценность2'
 });
 
 $('#button3').on('click', function() {
-  ga('send', 'event', 'Button3', 'Действия', 'Иллюстрация', 'Ценность3');
-  _gaq.push(['_trackEvent', 'Категория', 'Действия', 'Ярлык', 'Ценность'];
+  ga('send', {
+  hitType: 'event',
+  eventCategory: 'Button3',
+  eventAction: 'Нажатие',
+  eventLabel: 'Ценность3'
 });
