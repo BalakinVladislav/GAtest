@@ -8,4 +8,5 @@ $('#button2').on('click', function() {
 
 $('#button3').on('click', function() {
   ga('send', 'event', 'Button3', 'Действия', 'Иллюстрация', 'Ценность3');
+  _gaq.push(['_trackEvent', 'Категория', 'Действия', 'Ярлык', 'Ценность'];
 });
