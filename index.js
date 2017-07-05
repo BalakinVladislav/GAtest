@@ -5,7 +5,7 @@ $('#button1').on('click', function() {
   eventCategory: 'Button1',
   eventAction: 'Нажатие',
   eventLabel: 'Ценность1'
-}});
+})});
 
 $('#button2').on('click', function() {
   ga('send', {
@@ -13,7 +13,7 @@ $('#button2').on('click', function() {
   eventCategory: 'Button2',
   eventAction: 'Нажатие',
   eventLabel: 'Ценность2'
-}});
+})});
 
 $('#button3').on('click', function() {
   ga('send', {
@@ -21,4 +21,4 @@ $('#button3').on('click', function() {
   eventCategory: 'Button3',
   eventAction: 'Нажатие',
   eventLabel: 'Ценность3'
-}});
+})});
