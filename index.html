@@ -20,6 +20,15 @@
 
 </head>
 <body>
+<button id="testBut">push me!</button>
+<script type="text/javascript">
+	$(function(){
+		ga('send', 'event','testBut','Нажатие','ЦенностьTest')
+		$("#testBut").click(function(){
+			$(this).text("Pushed!")
+		})
+	});
+</script>
 <div id="test">Test</div>
 <a href="https://vk.com/id39345552" onclick="ga('send', {
   hitType: 'event',
