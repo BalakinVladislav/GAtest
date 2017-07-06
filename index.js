@@ -1,6 +1,5 @@
 $(function(){
 $('#button1').on('click', function() {
-	console.log('2 обработчик события click');
 	ga('send', {
   hitType: 'event',
   eventCategory: 'Button1',
