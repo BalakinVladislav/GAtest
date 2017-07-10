@@ -31,11 +31,12 @@ $('#button3').on('click', function() {
 
 $(function(){
 	$('.city-list > li[data-region="Волгоградская"]').on('click', function() {
+		alert('Получилось');
 		ga('send', {
-  hitType: 'event',
-  eventCategory: 'Выбор города',
-  eventAction: 'Выбор города из списка предложенных',
-  eventLabel: 'Волгоград'
+            hitType: 'event',
+            eventCategory: 'Выбор города',
+            eventAction: 'Выбор города из списка предложенных',
+            eventLabel: 'Волгоград'
         })
 	});
 });
