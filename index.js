@@ -28,3 +28,14 @@ $('#button3').on('click', function() {
 })
 });
 });
+
+$(function(){
+	$('.city-list > li[data-region="Волгоградская"]').on('click', function() {
+		ga('send', {
+  hitType: 'event',
+  eventCategory: 'Выбор города',
+  eventAction: 'Выбор города из списка предложенных',
+  eventLabel: 'Волгоград'
+        })
+	});
+});
